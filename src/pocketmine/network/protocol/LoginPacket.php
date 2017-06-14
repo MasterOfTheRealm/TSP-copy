@@ -19,7 +19,7 @@
 *
 */
 
-namespace pocketmine\network\mcpe\protocol;
+namespace pocketmine\network\protocol;
 
 #include <rules/DataPacket.h>
 
@@ -27,7 +27,7 @@ use pocketmine\network\mcpe\NetworkSession;
 
 class LoginPacket extends DataPacket {
 
-	const NETWORK_ID = ProtocolInfo::LOGIN_PACKET;
+	const NETWORK_ID = Info::LOGIN_PACKET;
 	const EDITION_POCKET = 0;
 
 	public $username;
@@ -59,7 +59,7 @@ class LoginPacket extends DataPacket {
 	public function decode(){
 		$this->protocol = $this->getInt();
 
-		if($this->protocol !== ProtocolInfo::CURRENT_PROTOCOL){
+		if($this->protocol !== Info::CURRENT_PROTOCOL){
 			$this->buffer = null;
 			return;
 		}
