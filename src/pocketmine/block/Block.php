@@ -1,7 +1,6 @@
 <?php
 
 /*
- *
  *  ____            _        _   __  __ _                  __  __ ____
  * |  _ \ ___   ___| | _____| |_|  \/  (_)_ __   ___      |  \/  |  _ \
  * | |_) / _ \ / __| |/ / _ \ __| |\/| | | '_ \ / _ \_____| |\/| | |_) |
@@ -13,9 +12,7 @@
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * @author PocketMine Team
- * @link http://www.pocketmine.net/
- *
+ * @author CookieSoftware Team
  *
 */
 
@@ -240,10 +237,29 @@ class Block extends Position implements BlockIds, Metadatable {
 			self::$list[self::CARPET] = Carpet::class;
 			self::$list[self::HARDENED_CLAY] = HardenedClay::class;
 			self::$list[self::COAL_BLOCK] = Coal::class;
+			
+			self::$list[self::SHULKER_BOX] = ShulkerBox::class;
+			self::$list[self::BLACK_GLAZED_TERRACOTTA] = BlackGlazedTerracotta::class;
+			self::$list[self::BLUE_GLAZED_TERRACOTTA] = BlueGlazedTerracotta::class;
+			self::$list[self::BROWN_GLAZED_TERRACOTTA] = BrownGlazedTerracotta::class;
+			self::$list[self::CYAN_GLAZED_TERRACOTTA] = CyanGlazedTerracotta::class;
+			self::$list[self::GRAY_GLAZED_TERRACOTTA] = GrayGlazedTerracotta::class;
+			self::$list[self::GREEN_GLAZED_TERRACOTTA] = GreenGlazedTerracotta::class;
+			self::$list[self::LIGHT_BLUE_GLAZED_TERRACOTTA] = LightBlueGlazedTerracotta::class;
+			self::$list[self::LIME_GLAZED_TERRACOTTA] = LimeGlazedTerracotta::class;
+			self::$list[self::MAGENTA_GLAZED_TERRACOTTA] = MagentaGlazedTerracotta::class;
+			self::$list[self::ORANGE_GLAZED_TERRACOTTA] = OrangeGlazedTerracotta::class;
+			self::$list[self::PINK_GLAZED_TERRACOTTA] = PinkGlazedTerracotta::class;
+			self::$list[self::PURPLE_GLAZED_TERRACOTTA] = PurpleGlazedTerracotta::class;
+			self::$list[self::RED_GLAZED_TERRACOTTA] = RedGlazedTerracotta::class;
+			self::$list[self::SILVER_GLAZED_TERRACOTTA] = SilverGlazedTerracotta::class;
+			self::$list[self::WHITE_GLAZED_TERRACOTTA] = WhiteGlazedTerracotta::class;
+			self::$list[self::YELLOW_GLAZED_TERRACOTTA] = YellowGlazedTerracotta::class;
 
 			self::$list[self::PACKED_ICE] = PackedIce::class;
 			self::$list[self::DOUBLE_PLANT] = DoublePlant::class;
-
+			self::$list[self::CONCRETE] = Concrete::class;
+			self::$list[self::CONCRETE_POWDER] = ConcretePowder::class;
 			self::$list[self::FENCE_GATE_SPRUCE] = FenceGateSpruce::class;
 			self::$list[self::FENCE_GATE_BIRCH] = FenceGateBirch::class;
 			self::$list[self::FENCE_GATE_JUNGLE] = FenceGateJungle::class;
