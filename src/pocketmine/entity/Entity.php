@@ -213,6 +213,7 @@ abstract class Entity extends Location implements Metadatable {
 		Entity::registerEntity(Stray::class);
 		Entity::registerEntity(ThrownExpBottle::class);
 		Entity::registerEntity(ThrownPotion::class);
+		Entity::registerEntity(BlockEntity::class);
 		Entity::registerEntity(Villager::class);
 		Entity::registerEntity(Witch::class);
 		Entity::registerEntity(Wither::class);
@@ -241,7 +242,7 @@ abstract class Entity extends Location implements Metadatable {
 		self::DATA_MAX_AIR => [self::DATA_TYPE_SHORT, 400],
 		self::DATA_NAMETAG => [self::DATA_TYPE_STRING, ""],
 		self::DATA_LEAD_HOLDER_EID => [self::DATA_TYPE_LONG, -1],
-		self::DATA_SCALE => [self::DATA_TYPE_FLOAT, 1],
+		self::DATA_SCALE => [self::DATA_TYPE_FLOAT, 1]
 	];
 
 	public $passenger = null;
