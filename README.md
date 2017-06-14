@@ -3,7 +3,7 @@
 -------------
 **Tesseract is the advanced server software based on Genisys, PocketMine-MP, and PMMP**<br>
 
-**It is not the official repository, we maintain this project until Tesseract resumes.
+**It is not the official repository, we maintain this project until Tesseract resumes.**
 
 ## Notice
 
