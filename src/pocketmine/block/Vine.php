@@ -154,6 +154,11 @@ class Vine extends Transparent {
 				4 => 2,
 				5 => 8
 			];
+			
+			if(!isset($sides[$this->meta])){
+				return false;
+			}
+			
 			if(!$this->getSide($sides[$this->meta])->isSolid()){ //Replace with common break method
 				$this->level->useBreakOn($this);
 				return Level::BLOCK_UPDATE_NORMAL;
