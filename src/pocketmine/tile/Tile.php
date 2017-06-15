@@ -101,7 +101,7 @@ abstract class Tile extends Position {
 	 *
 	 * @return Tile
 	 */
-	public static function createTile($type, Level $level, CompoundTag $nbt, ...$args){
+	public static function createTile($type, Chunk $chunk, CompoundTag $nbt, ...$args){
 		if(isset(self::$knownTiles[$type])){
 			$class = self::$knownTiles[$type];
 			return new $class($level, $nbt, ...$args);
@@ -135,7 +135,7 @@ abstract class Tile extends Position {
 		return self::$shortNames[static::class];
 	}
 
-	public function __construct(Level $level, CompoundTag $nbt){
+	public function __construct(Chunk $chunk, CompoundTag $nbt){
 		$this->timings = Timings::getTileEntityTimings($this);
 
 		$this->namedtag = $nbt;
