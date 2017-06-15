@@ -3541,7 +3541,7 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 	public function setTitleDuration(int $fadeIn, int $stay, int $fadeOut){
 		if($fadeIn >= 0 and $stay >= 0 and $fadeOut >= 0){
 			$pk = new SetTitlePacket();
-			$pk->type = SetTitlePacket::TYPE_SET_TIMES;
+			$pk->type = SetTitlePacket::TYPE_TIMES;
 			$pk->fadeInTime = $fadeIn;
 			$pk->duration = $stay;
 			$pk->fadeOutTime = $fadeOut;
