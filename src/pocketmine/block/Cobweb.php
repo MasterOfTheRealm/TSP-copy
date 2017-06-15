@@ -30,7 +30,8 @@ class Cobweb extends Flowable {
 
 	protected $id = self::COBWEB;
 
-	public function __construct(){
+	public function __construct($meta = 0){
+		$this->meta = $meta;
 
 	}
 

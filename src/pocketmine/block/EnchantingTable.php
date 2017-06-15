@@ -36,7 +36,8 @@ class EnchantingTable extends Transparent {
 
 	protected $id = self::ENCHANTING_TABLE;
 
-	public function __construct(){
+	public function __construct($meta = 0){
+		$this->meta = $meta;
 
 	}
 
