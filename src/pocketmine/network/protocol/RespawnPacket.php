@@ -25,12 +25,9 @@ namespace pocketmine\network\protocol;
 
 #include <rules/DataPacket.h>
 
-
-use pocketmine\network\mcpe\NetworkSession;
-
-class RespawnPacket extends DataPacket{
-	const NETWORK_ID = ProtocolInfo::RESPAWN_PACKET;
-
+class RespawnPacket extends DataPacket {
+	
+	const NETWORK_ID = Info::RESPAWN_PACKET;
 	public $x;
 	public $y;
 	public $z;
@@ -47,5 +44,4 @@ class RespawnPacket extends DataPacket{
 	public function handle(NetworkSession $session) : bool{
 		return $session->handleRespawn($this);
 	}
-
 }
