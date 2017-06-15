@@ -601,6 +601,14 @@ class Block extends Position implements BlockIds, Metadatable {
 	public function canPassThrough(){
 		return false;
 	}
+	
+	/**
+	 * Returns whether entities can climb up this block.
+	 * @return bool
+	 */
+	public function canClimb() : bool{
+		return false;
+	}
 
 	/**
 	 * @return string
