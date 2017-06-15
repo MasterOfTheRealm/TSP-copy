@@ -26,10 +26,10 @@ namespace pocketmine\network\protocol;
 #include <rules/DataPacket.h>
 
 
-use pocketmine\network\mcpe\NetworkSession;
+use pocketmine\network\protocol\NetworkSession;
 
 class RespawnPacket extends DataPacket{
-	const NETWORK_ID = ProtocolInfo::RESPAWN_PACKET;
+	const NETWORK_ID = Info::RESPAWN_PACKET;
 
 	public $x;
 	public $y;
