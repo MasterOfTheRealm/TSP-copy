@@ -38,8 +38,10 @@ if [ "$POCKETMINE_FILE" == "" ]; then
 		POCKETMINE_FILE="./PocketMine-MP.phar"
 	elif [ -f ./src/pocketmine/PocketMine.php ]; then
 		POCKETMINE_FILE="./src/pocketmine/PocketMine.php"
+	elif [ -f ./TSP.phar ]; then
+		POCKETMINE_FILE="./TSP.phar"
 	else
-		echo "Couldn't find a valid Tesseract installation"
+		echo "Couldn't find a valid TSP installation"
 		exit 1
 	fi
 fi
