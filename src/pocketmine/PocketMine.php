@@ -75,7 +75,7 @@ namespace pocketmine {
 
 	const VERSION = "1.4.0";
 	const API_VERSION = "3.0.0";
-	// TODO const TSP_VERSION = "1.0.0";
+	// TODO const API_TSP_VERSION = "1.0.0";
 	const CODENAME = "Revolution";
 
 	/*
