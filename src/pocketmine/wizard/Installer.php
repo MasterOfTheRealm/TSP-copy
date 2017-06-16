@@ -54,7 +54,7 @@ class Installer {
 	}
 
 	public function run(){
-		echo "[*] Tesseract set-up wizard\n";
+		echo "[*] TSP set-up wizard\n";
 		echo "[*] Please select a language:\n";
 		foreach(InstallerLang::$languages as $short => $native){
 			echo " $native => $short\n";

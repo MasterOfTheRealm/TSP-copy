@@ -311,7 +311,7 @@ class Server {
 	 * @return string
 	 */
 	public function getName() : string{
-		return "Tesseract";
+		return "TSP";
 	}
 
 	/**
@@ -1448,7 +1448,7 @@ class Server {
 	}
 
 	public function about(){
-		$this->logger->info("Running Tesseract");
+		$this->logger->info("Running TSP");
 	}
 
 	public function loadAdvancedConfig(){
@@ -1564,8 +1564,8 @@ class Server {
 				mkdir($pluginPath, 0777);
 			}
 
-			if(!file_exists($this->getPluginPath() . DIRECTORY_SEPARATOR . "Tesseract/")){
-				mkdir($this->getPluginPath() . DIRECTORY_SEPARATOR . "Tesseract/", 0777);
+			if(!file_exists($this->getPluginPath() . DIRECTORY_SEPARATOR . "TSP/")){
+				mkdir($this->getPluginPath() . DIRECTORY_SEPARATOR . "TSP/", 0777);
 			}
 
 			if(!file_exists($dataPath . "crashdumps/")){
@@ -1605,17 +1605,17 @@ class Server {
 			}
 
 			$lang = $this->getProperty("settings.language", BaseLang::FALLBACK_LANGUAGE);
-			if(file_exists($this->filePath . "src/pocketmine/resources/tesseract_$lang.yml")){
-				$content = file_get_contents($file = $this->filePath . "src/pocketmine/resources/tesseract_$lang.yml");
+			if(file_exists($this->filePath . "src/pocketmine/resources/TSP_$lang.yml")){
+				$content = file_get_contents($file = $this->filePath . "src/pocketmine/resources/TSP_$lang.yml");
 			}else{
-				$content = file_get_contents($file = $this->filePath . "src/pocketmine/resources/tesseract_eng.yml");
+				$content = file_get_contents($file = $this->filePath . "src/pocketmine/resources/TSP_eng.yml");
 			}
 
-			if(!file_exists($this->dataPath . "tesseract.yml")){
-				@file_put_contents($this->dataPath . "tesseract.yml", $content);
+			if(!file_exists($this->dataPath . "TSP.yml")){
+				@file_put_contents($this->dataPath . "TSP.yml", $content);
 			}
 			$internelConfig = new Config($file, Config::YAML, []);
-			$this->advancedConfig = new Config($this->dataPath . "tesseract.yml", Config::YAML, []);
+			$this->advancedConfig = new Config($this->dataPath . "TSP.yml", Config::YAML, []);
 			$cfgVer = $this->getAdvancedProperty("config.version", 0, $internelConfig);
 			$advVer = $this->getAdvancedProperty("config.version", 0);
 
@@ -1648,13 +1648,13 @@ class Server {
 				"view-distance" => 8
 			]);
 			$this->logger->info("
-  _______                                                   _   
- |__   __|                                                 | |  
-    | |      ___   ___   ___    ___   _ __    __ _    ___  | |_ 
-    | |     / _ \ / __| / __|  / _ \ | '__|  / _` |  / __| | __|
-    | |    |  __/ \__ \ \__ \ |  __/ | |    | (_| | | (__  | |_ 
-    |_|     \___| |___/ |___/  \___| |_|     \__,_|  \___|  \__|
-                                                                
+  _______
+ |__   __|                                              
+    | |  ___   ____   
+    | | / __| |  _ \
+    | | \__ \ | |_| | 
+    |_|.|___/.|  __/ 
+	    	  |_|                                                               
                                                                 |   1.1.0.55  
                                                                    ");
 
@@ -1880,7 +1880,7 @@ class Server {
 			]), $this->dserverConfig["timer"]);
 
 			if($cfgVer > $advVer){
-				$this->logger->notice("Your tesseract.yml needs update");
+				$this->logger->notice("Your TSP.yml needs update");
 				$this->logger->notice("Current Version: $advVer   Latest Version: $cfgVer");
 			}
 
