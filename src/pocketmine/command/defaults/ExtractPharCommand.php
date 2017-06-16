@@ -26,7 +26,7 @@ class ExtractPharCommand extends VanillaCommand {
 			return true;
 		}
 		if(!isset($args[0]) or !file_exists($args[0])) return false;
-		$folderPath = $sender->getServer()->getPluginPath() . DIRECTORY_SEPARATOR . "Tesseract" . DIRECTORY_SEPARATOR . basename($args[0]);
+		$folderPath = $sender->getServer()->getPluginPath() . DIRECTORY_SEPARATOR . "TSP" . DIRECTORY_SEPARATOR . basename($args[0]);
 		if(file_exists($folderPath)){
 			$sender->sendMessage("Phar already exists, overwriting...");
 		}else{
