@@ -1,19 +1,19 @@
-![Tesseract](http://i.imgur.com/1ga0ATy.jpg)
-## Tesseract Introduction
+## TSP Introduction
 -------------
-**Tesseract is the advanced server software based on Genisys, PocketMine-MP, and PMMP**<br>
-
-**It is not the official repository, we maintain this project until Tesseract resumes.**
+**TSP is the advanced server software based on Genisys, PocketMine-MP, and PMMP**<br>
 
 ## Notice
 
-**Tesseract is on 1.1, and is very unstable, please feel free to report issues that you have with the software.** <br>
+**TSP is on 1.1, and is very unstable, please feel free to report issues that you have with the software.** <br>
 
-## Builds
-__Travis-CI Build:__<br>
- [![Travis-CI](https://travis-ci.org/TesseractTeam/Tesseract.svg?branch=master)](https://travis-ci.org/TesseractTeam/Tesseract)<br>
- __CircleCI Build__<br>
-[![CircleCI](https://circleci.com/gh/circleci/mongofinil.svg?&style=shield&circle-token=8678c9589c2e09b659783b4d7a65365fa982127e/)](https://circleci.com/gh/TesseractTeam/Tesseract)
+## CookieSoftware/TSP Team
+
+* __[CookieCode](https://twitter.com/ImCookieGame/)__
+* __[armagadon159753](https://twitter.com/armagadon159753)__
+* __[wiligangster](https://twitter.com/_Waaliid)__
+* __[TheAz928](https://twitter.com/TheAz928/)__
+* __[MasterOfTheRealm](https://github.com/MasterOfTheRealm)__
+* __[RateekMCPE](https://twitter.com/Rateek_)__
 
 ## Quick Links (Instead of scrolling, click these!)
 
@@ -22,15 +22,6 @@ __[Resources](#resources)__ <br>
 __[Acknowledgements](#acknowledgements)__ <br>
 __[License](#license)__ <br>
 __[Third Party Libraries and Protocols Used](#ThirdpartyLibrariesProtocolsUsed)__ <br>
-
-## Installation
-
-**Self-installation:**<br>
-Supported platforms: Linux, Windows, OS X, Raspberry Pi, and ODROID. <br>
-[Installation](https://github.com/TesseractTeam/Tesseract/wiki/Installation)<br>
-
-__[Back to QuickLinks](#quick-links-instead-of-scrolling-click-these)__
-<br>
 
 ## Resources
 
@@ -44,8 +35,8 @@ __[Back to QuickLinks](#quick-links-instead-of-scrolling-click-these)__
 
 ## Acknowledgements
 
-- Tesseract is a "spoon" of **[Genisys](https://github.com/iTXTech/Genisys/), and [PMMP](https://github.com/pmmp/PocketMine-MP/)**
-- Most of the original code was written by ITXTech, PocketMine-MP, and the PMMP Team. <br>
+- TSP is a "spoon" of **[Genisys](https://github.com/iTXTech/Genisys/), [Tesseract](https://github.com/TesseractTeam/Tesseract/) and [PMMP](https://github.com/pmmp/PocketMine-MP/)**
+- Most of the original code was written by ITXTech, PocketMine-MP, Tesseract, and the PMMP Team. <br>
 
 __[Back to QuickLinks](#quick-links-instead-of-scrolling-click-these)__<br>
 
