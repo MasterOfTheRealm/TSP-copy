@@ -51,28 +51,26 @@ class AddEntityPacket extends DataPacket {
 
 	}
 
-	public function encode(){
-		$this->reset();
-		$this->putEntityUniqueId($this->eid);
-		$this->putEntityRuntimeId($this->eid);
-		$this->putUnsignedVarInt($this->type);
-		$this->putVector3f($this->x, $this->y, $this->z);
-		$this->putVector3f($this->speedX, $this->speedY, $this->speedZ);
-		$this->putLFloat($this->pitch);
-		$this->putLFloat($this->yaw);
-		$this->putUnsignedVarInt(count($this->attributes));
-		foreach($this->attributes as $entry){
-			$this->putString($entry->getName());
-			$this->putLFloat($entry->getMinValue());
-			$this->putLFloat($entry->getValue());
-			$this->putLFloat($entry->getMaxValue());
-		}
-		$this->putEntityMetadata($this->metadata);
-		$this->putUnsignedVarInt(count($this->links));
-		foreach($this->links as $link){
-			$this->putEntityUniqueId($link[0]);
-			$this->putEntityUniqueId($link[1]);
-			$this->putByte($link[2]);
+	$this->reset(); 
+	$this->putEntityId($this->eid); 
+	$this->putEntityId($this->eid); 
+	$this->putUnsignedVarInt($this->type); 
+	$this->putVector3f($this->x, $this->y, $this->z); 
+	$this->putVector3f($this->speedX, $this->speedY, $this->speedZ); 
+	$this->putLFloat($this->pitch); $this->putLFloat($this->yaw); 
+	$this->putUnsignedVarInt(count($this->attributes)); 
+	foreach($this->attributes as $entry){ 
+		$this->putString($entry->getName()); 
+		$this->putLFloat($entry->getMinValue()); 
+		$this->putLFloat($entry->getValue()); 
+		$this->putLFloat($entry->getMaxValue());
+	} 
+	$this->putEntityMetadata($this->metadata); 
+	$this->putUnsignedVarInt(count($this->links)); 
+	foreach($this->links as $link){
+		$this->putEntityUniqueId($link[0]);
+		$this->putEntityUniqueId($link[1]);
+		$this->putByte($link[2]); } } 
 		}
 	}
 }
