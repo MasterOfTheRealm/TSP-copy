@@ -201,7 +201,7 @@ class MainLogger extends \AttachableThreadedLogger {
 	protected function send($message, $level, $prefix, $color){
 		$now = time();
 
-		$message = TextFormat::toANSI(TextFormat::GREEN . "[Tesseract] " . TextFormat::AQUA . "[" . date("H:i:s", $now) . "] " . TextFormat::RESET . $color . "[" . $prefix . "]:" . " " . $message . TextFormat::RESET);
+			$message = TextFormat::toANSI(TextFormat::GREEN . "[TSP] " . TextFormat::AQUA . "[" . date("H:i:s", $now) . "] " . TextFormat::RESET . $color . "[" . $prefix . "]:" . " " . $message . TextFormat::RESET);
 		$cleanMessage = TextFormat::clean($message);
 
 		if(!Terminal::hasFormattingCodes()){
