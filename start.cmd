@@ -1,5 +1,5 @@
 @echo off
-TITLE Tesseract server software for Minecraft: Pocket Edition
+TITLE TSP server software for Minecraft: Pocket Edition
 cd /d %~dp0
 
 if exist bin\php\php.exe (
@@ -10,12 +10,12 @@ if exist bin\php\php.exe (
 )
 
 if exist PocketMine-MP.phar (
-	set POCKETMINE_FILE=Tesseract*.phar
+	set POCKETMINE_FILE=TSP*.phar
 ) else (
 	if exist src\pocketmine\PocketMine.php (
 		set POCKETMINE_FILE=src\pocketmine\PocketMine.php
 	) else (
-		echo "Couldn't find a valid Tesseract installation"
+		echo "Couldn't find a valid TSP installation"
 		pause
 		exit 1
 	)
