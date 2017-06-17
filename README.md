@@ -1,6 +1,6 @@
 ## TSP Introduction
 -------------
-**TSP is the advanced server software based on Genisys, PocketMine-MP, and PMMP**<br>
+**TSP is the advanced server software based on Tesseract, Genisys, PocketMine-MP, and PMMP**<br>
 
 ## Notice
 
@@ -9,10 +9,10 @@
 ## CookieSoftware/TSP Team
 
 * __[CookieCode](https://twitter.com/ImCookieGame/)__
-* __[armagadon159753](https://twitter.com/armagadon159753)__
-* __[wiligangster](https://twitter.com/_Waaliid)__
+* __[armagadon159753](https://twitter.com/armagadon159753/)__
+* __[wiligangster](https://twitter.com/_Waaliid/)__
 * __[TheAz928](https://twitter.com/TheAz928/)__
-* __[MasterOfTheRealm](https://github.com/MasterOfTheRealm)__
+* __[MasterOfTheRealm](https://twitter.com/Realm4Ever2000/)__
 
 ## Quick Links (Instead of scrolling, click these!)
 
@@ -20,12 +20,12 @@ __[Installation](#installation)__ <br>
 __[Resources](#resources)__ <br>
 __[Acknowledgements](#acknowledgements)__ <br>
 __[License](#license)__ <br>
-__[Third Party Libraries and Protocols Used](#ThirdpartyLibrariesProtocolsUsed)__ <br>
+__[Third Party Libraries and Protocols Used](#third-party-libraries-protocols-used)__ <br>
 
 ## Resources
 
 **External Links**<br>
-Your Tesseract Server needs Visual Studio C++ Redistributable 2015 (If you are on windows). <br>
+Your TSP Server needs Visual Studio C++ Redistributable 2015 (If you are on windows). <br>
 It can be downloaded
 __[here](https://www.microsoft.com/en-us/download/details.aspx?id=48145)__ <br>
 
@@ -55,7 +55,7 @@ __[Back to QuickLinks](#quick-links-instead-of-scrolling-click-these)__<br>
 	You should have received a copy of the GNU Lesser General Public License
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-__[License Page](https://github.com/TesseractTeam/Tesseract/blob/master/LICENSE)__
+__[License Page](https://github.com/CookieSoftware/TSP/blob/master/LICENSE)__
 <br>
 __[Back to QuickLinks](#quick-links-instead-of-scrolling-click-these)__
 <br>
