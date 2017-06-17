@@ -4,7 +4,7 @@
 
 ## Notice
 
-**TSP is on 1.1, and is very unstable, please feel free to report issues that you have with the software.** <br>
+**TSP is on 1.1, stable version please feel free to report issues that you have with the software.** <br>
 
 ## CookieSoftware/TSP Team
 
@@ -13,7 +13,6 @@
 * __[wiligangster](https://twitter.com/_Waaliid)__
 * __[TheAz928](https://twitter.com/TheAz928/)__
 * __[MasterOfTheRealm](https://github.com/MasterOfTheRealm)__
-* __[RateekMCPE](https://twitter.com/Rateek_)__
 
 ## Quick Links (Instead of scrolling, click these!)
 
