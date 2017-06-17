@@ -20,7 +20,7 @@ __[Installation](#installation)__ <br>
 __[Resources](#resources)__ <br>
 __[Acknowledgements](#acknowledgements)__ <br>
 __[License](#license)__ <br>
-__[Third Party Libraries and Protocols Used](#third-party-libraries-protocols-used)__ <br>
+__[Third Party Libraries and Protocols Used](#third-party-librariesprotocols-used)__ <br>
 
 ## Resources
 
