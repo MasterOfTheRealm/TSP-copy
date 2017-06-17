@@ -82,7 +82,7 @@ class LevelEventPacket extends DataPacket {
 	const EVENT_SOUND_EXPLODE = 3501;
 	/* 3502-3509 are splash SOUNDS with particles. Probably for cauldrons. */
 	const EVENT_SOUND_SPELL = 3504;
-	const EVENT_SOUND_SPLASH = 3506;
+	const EVENT_CAULDRON_FILL_WATER = 3506;
 	const EVENT_SOUND_GRAY_SPLASH = 3507;//TODO: fix name
 
 	const EVENT_BLOCK_START_BREAK = 3600;
